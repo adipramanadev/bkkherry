@@ -73,3 +73,5 @@ Route::group(['middleware' => 'checkRole:pendaftar'], function () {
     Route::delete('/dashboard/lamaran/{id}', [DashboardLamaranController::class, 'destroy']);
     Route::get('/dashboard/lamaran/cetak/{lowongan:slug}', [DashboardLamaranController::class, 'cetak']);
 });
+
+
